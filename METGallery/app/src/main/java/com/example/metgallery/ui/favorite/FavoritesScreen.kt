@@ -17,6 +17,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -56,7 +58,7 @@ private fun FavoritesScreenPrivate(
                         )
                     }
                 },
-                title = { Text(text = "Favorites") },
+                title = { Text(text = "Your Favorites", color = Color.Red, fontWeight = FontWeight.Bold, fontSize = 25.sp) },
                 modifier = Modifier.fillMaxWidth(),
             )
         }
@@ -70,7 +72,8 @@ private fun FavoritesScreenPrivate(
             items(favorites) { elem ->
                 Text(
                     text = "${elem.objectId}",
-                    fontSize = 20.sp,
+                    fontSize = 25.sp,
+                    fontWeight = FontWeight.Bold,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(5.dp)

@@ -5,6 +5,7 @@ import com.example.metgallery.data.remote.dto.ApiElements
 import com.example.metgallery.data.remote.dto.ApiElemDetails
 import com.example.metgallery.data.remote.metApi
 import com.example.metgallery.domain.repository.RemoteElemDataSource
+import com.example.metgallery.ui.IUserScreen
 
 class RemoteElemDataSourceImpl : RemoteElemDataSource {
 
